@@ -18,7 +18,7 @@ def sanitize_input(input_string):
 def translate_sql(sql_query, dialect):
     """Translate SQL to the target database dialect."""
     try:
-        translated_query = sqlglot.transpile(sql_query, read="sql", write=dialect)[0]
+        translated_query = sqlglot.transpile(sql_query, read="mysql", write=dialect)[0]
         return translated_query
     except Exception as e:
         raise Exception(f"SQL Translation Error: {e}")
