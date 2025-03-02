@@ -14,11 +14,11 @@ def main():
     - **MySQL**: `mysql+pymysql://user:password@host:port/database`
     - **SQL Server**: `mssql+pyodbc://user:password@host:port/database?driver=ODBC Driver 17 for SQL Server`
     - **Oracle**: `oracle+cx_oracle://user:password@host:port/service_name`
-    - **SQLite**: `sqlite:///example.db`
+    - **SQLite**: `sqlite:///data/example.db`
     """)
 
     # User input for DB connection string
-    db_url = st.text_input("Enter Database URL", "sqlite:///example.db")
+    db_url = st.text_input("Enter Database URL", "sqlite:///data/example.db")
     connect_button = st.button("Connect")
 
     if connect_button:

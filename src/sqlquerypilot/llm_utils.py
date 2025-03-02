@@ -11,7 +11,3 @@ def load_api_key():
         st.error("⚠️ OPENAI_API_KEY is missing. Check your .env file!")
         return None
     return api_key
-
-def initialize_llm(api_key):
-    llm_name = "gpt-3.5-turbo"
-    return ChatOpenAI(model=llm_name)

@@ -2,6 +2,9 @@
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
 from langchain.llms import OpenAI
+from llm_utils import  load_api_key
+import streamlit as st
+
 
 def generate_sql(nl_query, schema_info):
     """Generate SQL from natural language using LangChain."""
@@ -19,9 +22,12 @@ def generate_sql(nl_query, schema_info):
             Return only the SQL query without any additional explanation.
             """
         )
-
+        api_key = load_api_key()
+        if not api_key:
+                st.error("⚠️ OPENAI_API_KEY is missing. Check your .env file!")
+                return None
         # Initialize the LLM (e.g., OpenAI GPT)
-        llm = OpenAI(api_key="your_openai_api_key")  # Replace with your OpenAI API key
+        llm = OpenAI(api_key=api_key)  # Replace with your OpenAI API key
 
         # Create a LangChain LLMChain
         chain = LLMChain(llm=llm, prompt=prompt_template)

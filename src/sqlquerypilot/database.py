@@ -2,10 +2,18 @@
 import sqlalchemy
 from sqlalchemy import inspect
 import pandas as pd
+import os
 
 def create_connection(db_url):
     """Create a database connection."""
     try:
+        # If the database URL is for SQLite, ensure the ./data directory exists
+        if db_url.startswith("sqlite:///"):
+            db_path = db_url.replace("sqlite:///", "")
+            data_dir = os.path.dirname(db_path)
+            if data_dir and not os.path.exists(data_dir):
+                os.makedirs(data_dir)  # Create the ./data directory if it doesn't exist
+
         engine = sqlalchemy.create_engine(db_url, connect_args={})
         conn = engine.connect()
         return conn, engine

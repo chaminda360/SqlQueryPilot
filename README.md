@@ -107,7 +107,7 @@ The application supports the following databases:
    - Open the application in your web browser.
 
 2. **Enter the Database Connection URL**:
-   - Provide the connection URL for your database (e.g., `sqlite:///example.db`).
+   - Provide the connection URL for your database (e.g., `sqlite:///data/example.db`).
 
 3. **Connect to the Database**:
    - Click **Connect** to establish a connection to the database.
@@ -126,7 +126,7 @@ The application supports the following databases:
 ## Example
 
 ### Input:
-- **Database URL**: `sqlite:///example.db`
+- **Database URL**: `sqlite:///data/example.db`
 - **Natural Language Query**: "Show me all customers from New York"
 
 ### Output:
