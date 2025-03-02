@@ -59,4 +59,4 @@ pyproject.toml
 poetry.lock
 
 # Ignore data folder contents
-data/*
+# data/*
