@@ -57,3 +57,5 @@ dmypy.json
 # Poetry
 pyproject.toml
 poetry.lock
+
+/data/*
