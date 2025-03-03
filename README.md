@@ -133,7 +133,12 @@ The application supports the following databases:
 #### Generated SQL (Generic):
 ```sql
 SELECT * FROM customers WHERE city = 'New York';
-````
+```
+#### Translated SQL (SQLite):
+```sql
+SELECT * FROM customers WHERE city = 'New York';
+```
+#### Results:
 
 # Query Result Example
 
