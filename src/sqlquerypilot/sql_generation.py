@@ -1,10 +1,12 @@
-# sql_generation.py
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
 from langchain.llms import OpenAI
-from llm_utils import  load_api_key
+from llm_utils import load_api_key
 import streamlit as st
+from logger import get_logger
 
+# Setup logger
+logger = get_logger(__name__)
 
 def generate_sql(nl_query, schema_info):
     """Generate SQL from natural language using LangChain."""
@@ -24,8 +26,10 @@ def generate_sql(nl_query, schema_info):
         )
         api_key = load_api_key()
         if not api_key:
-                st.error("⚠️ OPENAI_API_KEY is missing. Check your .env file!")
-                return None
+            st.error("⚠️ OPENAI_API_KEY is missing. Check your .env file!")
+            logger.error("OPENAI_API_KEY is missing.")
+            return None
+        
         # Initialize the LLM (e.g., OpenAI GPT)
         llm = OpenAI(api_key=api_key)  # Replace with your OpenAI API key
 
@@ -34,6 +38,8 @@ def generate_sql(nl_query, schema_info):
 
         # Generate SQL
         sql_query = chain.run(nl_query=nl_query, schema_info=schema_info)
+        logger.info("SQL query generated successfully.")
         return sql_query.strip()
     except Exception as e:
+        logger.error(f"SQL Generation Error: {e}")
         raise Exception(f"SQL Generation Error: {e}")

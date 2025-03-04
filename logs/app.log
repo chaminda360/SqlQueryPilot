@@ -1,0 +1,62 @@
+2025-03-03 12:06:03,883 - INFO - Application title displayed.
+2025-03-03 12:06:03,884 - INFO - Displayed supported databases.
+2025-03-03 12:06:03,886 - INFO - Session state initialized.
+2025-03-03 12:06:15,013 - INFO - Application title displayed.
+2025-03-03 12:06:15,014 - INFO - Displayed supported databases.
+2025-03-03 12:06:15,014 - INFO - Session state initialized.
+2025-03-03 12:06:15,097 - INFO - Application title displayed.
+2025-03-03 12:06:15,098 - INFO - Displayed supported databases.
+2025-03-03 12:06:15,099 - INFO - Session state initialized.
+2025-03-03 12:06:15,121 - INFO - Database dialect set to: sqlite
+2025-03-03 12:06:15,121 - INFO - Successfully connected to database: sqlite:///data/salary.db
+2025-03-03 12:06:33,047 - INFO - Application title displayed.
+2025-03-03 12:06:33,047 - INFO - Displayed supported databases.
+2025-03-03 12:06:33,049 - INFO - Session state initialized.
+2025-03-03 12:06:43,425 - INFO - Application title displayed.
+2025-03-03 12:06:43,426 - INFO - Displayed supported databases.
+2025-03-03 12:06:43,427 - INFO - Session state initialized.
+2025-03-03 12:06:43,510 - INFO - Application title displayed.
+2025-03-03 12:06:43,511 - INFO - Displayed supported databases.
+2025-03-03 12:06:43,512 - INFO - Session state initialized.
+2025-03-03 12:06:45,628 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-03-03 12:06:45,653 - INFO - Generated SQL: SELECT Department, Base_Salary 
+FROM salaries_2023;
+2025-03-03 12:06:45,666 - INFO - Translated SQL Query: SELECT Department, Base_Salary FROM salaries_2023
+2025-03-03 12:06:45,761 - INFO - Query executed successfully.
+2025-03-04 10:36:17,809 - INFO - Application title displayed.
+2025-03-04 10:36:17,811 - INFO - Displayed supported databases.
+2025-03-04 10:36:17,814 - INFO - Session state initialized.
+2025-03-04 10:36:25,046 - INFO - Application title displayed.
+2025-03-04 10:36:25,047 - INFO - Displayed supported databases.
+2025-03-04 10:36:25,048 - INFO - Session state initialized.
+2025-03-04 10:36:25,146 - INFO - Application title displayed.
+2025-03-04 10:36:25,149 - INFO - Displayed supported databases.
+2025-03-04 10:36:25,151 - INFO - Session state initialized.
+2025-03-04 10:36:25,179 - INFO - Connected to database: sqlite:///data/salary.db
+2025-03-04 10:36:25,183 - INFO - Fetched schema information successfully.
+2025-03-04 10:36:25,184 - INFO - Database dialect set to: sqlite
+2025-03-04 10:36:25,184 - INFO - Successfully connected to database: sqlite:///data/salary.db
+2025-03-04 10:36:46,858 - INFO - Application title displayed.
+2025-03-04 10:36:46,859 - INFO - Displayed supported databases.
+2025-03-04 10:36:46,860 - INFO - Session state initialized.
+2025-03-04 10:36:46,959 - INFO - Application title displayed.
+2025-03-04 10:36:46,959 - INFO - Displayed supported databases.
+2025-03-04 10:36:46,961 - INFO - Session state initialized.
+2025-03-04 10:36:46,963 - INFO - User input sanitized.
+2025-03-04 10:36:46,964 - INFO - OPENAI_API_KEY loaded successfully.
+2025-03-04 10:36:50,001 - INFO - Application title displayed.
+2025-03-04 10:36:50,004 - INFO - Displayed supported databases.
+2025-03-04 10:36:50,005 - INFO - Session state initialized.
+2025-03-04 10:36:50,006 - INFO - User input sanitized.
+2025-03-04 10:36:50,007 - INFO - OPENAI_API_KEY loaded successfully.
+2025-03-04 10:36:50,280 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-03-04 10:36:50,310 - INFO - SQL query generated successfully.
+2025-03-04 10:36:51,813 - INFO - HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+2025-03-04 10:36:51,815 - INFO - SQL query generated successfully.
+2025-03-04 10:36:51,816 - INFO - Generated SQL: SELECT DISTINCT Department, Base_Salary, Overtime_Pay, Longevity_Pay, Grade
+FROM salaries_2023;
+2025-03-04 10:36:51,818 - INFO - SQL query validated successfully.
+2025-03-04 10:36:51,827 - INFO - SQL query translated to sqlite dialect.
+2025-03-04 10:36:51,828 - INFO - Translated SQL Query: SELECT DISTINCT Department, Base_Salary, Overtime_Pay, Longevity_Pay, Grade FROM salaries_2023
+2025-03-04 10:36:51,931 - INFO - Query executed successfully.
+2025-03-04 10:36:51,955 - INFO - Query executed successfully.

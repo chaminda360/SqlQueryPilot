@@ -67,13 +67,10 @@ The application supports the following databases:
 1. **Fine-Tune Validation Rules**:
    - Adjust the whitelist of allowed SQL operations based on the application's requirements.
 
-2. **Logging and Monitoring**:
-   - Log all SQL queries and errors for auditing and debugging purposes.
-
-3. **User Permissions**:
+2. **User Permissions**:
    - Ensure the database user account used by the application has limited permissions (e.g., read-only access).
 
-4. **Testing**:
+3. **Testing**:
    - Test the application with various inputs to ensure SQL injection is prevented and the application behaves as expected.
 
 ---
